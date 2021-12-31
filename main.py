@@ -9,6 +9,7 @@ serverDiscord = './data/svDS.png'
 canalDS = './data/canal.png'
 mensajeDS = './data/mensaje.png'
 
+
 def abrirApp():
     while True:
         pos = imagesearch(icoDiscord, precision=0.5)
@@ -51,7 +52,8 @@ def main():
     canal()
     intTexto()
     ingTexto()
-    time.sleep(7260)
+    print('Esperando a que haya otro bumpeo disponible!')
+    time.sleep(125 * 60)
     return main()
 
 
